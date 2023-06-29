@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de mascotas</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-59WDXHM');</script>
+    <!-- End Google Tag Manager -->
+    <link rel="stylesheet" href="../css/home-style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"
+        rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="../js/searcher-script.js" defer></script>
+
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59WDXHM" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header>
+        <nav class="nav-bar">
+            <span class="nav-bar__logo">PASY</span>
+            <div class="nav-bar__btns">
+                <button class="nav-bar__donate-btn">
+                    Donar
+                    <img src="../img\green-heart__nav-bar-icon.svg" alt="green heart" />
+                </button>
+                <img class="nav-bar__menu-icon" src="../img\burguer-menu__nav-bar-icon.svg" alt="burguer menu icon" />
+            </div>
+        </nav>
+    </header>
+
+    <main class="searcher-page__body">
+        <section>
+            <h1 class="searcher-page__title">Buscador de mascotas</h1>
+
+            <form class="pet-searcher" action="./lista-resultados.php" method="post">
+                <div class="pet-searcher__field" id="specie-container">
+                    <legend id="specie-legend">Especie de la mascota</legend>
+                    <div id="specie-div">
+                        <label for="dog-specie">
+                            <input type="radio" id="dog-specie" name="pet-species" value="dog-specie" required checked
+                                id="input-pet-searcher" />
+                            <span class="dog-specie"></span>
+                        </label>
+
+                        <label for="cat-specie">
+                            <input type="radio" id="cat-specie" name="pet-species" value="cat-specie"
+                                id="input-pet-searcher" required />
+                            <span class="cat-specie"></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pet-searcher__field pet-searcher__field--button ">
+                    <legend>Que sea...</legend>
+                    <div>
+                        <label for="male-pet">
+                            <input type="radio" value="male-pet" id="male-pet" name="pet-gender">
+                            <span class="male-pet">Macho</span>
+                        </label>
+
+                        <label for="female-pet">
+                            <input type="radio" value="female-pet" id="female-pet" name="pet-gender" checked>
+                            <span class="female-pet">Hembra</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="pet-searcher__field">
+                    <legend>De tamaño...</legend>
+                    <div class="check-container">
+                        <div>
+                            <label class="checkfield" for="small">
+                                <input type="radio" id="small" name="pet-size" value="small-size" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">Pequeño</span>
+                        </div>
+
+                        <div>
+                            <label class="checkfield" for="middle">
+                                <input type="radio" id="middle" name="pet-size" value="middle-size">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">Mediano</span>
+                        </div>
+
+                        <div>
+                            <label class="checkfield" for="large">
+                                <input type="radio" id="large" name="pet-size" value="large-size">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">Grande</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="pet-searcher__field">
+                    <legend>De edad...</legend>
+                    <div class="check-container" id="age-field">
+                        <div>
+                            <label class="checkfield" for="less-1-year">
+                                <input type="radio" id="less-1-year" name="pet-age" value="less-1-year">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">Menor a 1 año</span>
+                        </div>
+
+                        <div>
+                            <label class="checkfield" for="1-2-year">
+                                <input type="radio" id="1-2-year" name="pet-age" value="1-2-year" checked>
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">1 a 2 años</span>
+                        </div>
+
+                        <div>
+                            <label class="checkfield" for="3-4-year">
+                                <input type="radio" id="3-4-year" name="pet-age" value="3-4-year">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">3 a 4 años</span>
+                        </div>
+
+                        <div>
+                            <label class="checkfield" for="5-year">
+                                <input type="radio" id="5-year" name="pet-age" value="5-year">
+                                <span class="checkmark"></span>
+                            </label>
+                            <span class="check-text">Mayor a 5 años</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="emo-phrase">Lo más importante es que lo puedas cuidar y amar</p>
+                <div class="btn-div">
+                    <button class="search-button search-button--secondary">Ver todos</button>
+                    <button class="search-button" type="submit" name="submit">Buscar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    </head>
+</body>
+
+</html>
