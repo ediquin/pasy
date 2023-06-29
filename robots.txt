@@ -1,0 +1,19 @@
+#Restringir el crawl de buscadores a la pagina de resultados del buscador
+User-agent: *
+Disallow: buscador/lista-resultados.php
+
+#Restringir el crawl de buscadores a la pagina de perfil de una mascota
+User-agent: *
+Disallow: buscador/perfil-mascota.php
+
+#Restringir el crawl de buscadores a la pagina de informacion de visita
+User-agent: *
+Disallow: buscador/dia-visita.php
+
+#Restringir el crawl de buscadores a la pagina de gracias por la visita
+User-agent: *
+Disallow: buscador/visita-gracias.php
+
+#Restringir el crawl de buscadores a la pagina de recomendaciones para la visita
+User-agent: *
+Disallow: buscador/consejos-visita.html
