@@ -51,7 +51,7 @@
         <section>
             <h1 class="searcher-page__title">Buscador de mascotas</h1>
 
-            <form class="pet-searcher" action="./lista-resultados.php" method="post">
+            <form class="pet-searcher" action="./lista-resultados.php" method="post" id="pet_searcher_form">
                 <div class="pet-searcher__field" id="specie-container">
                     <legend id="specie-legend">Especie de la mascota</legend>
                     <div id="specie-div">
@@ -154,7 +154,7 @@
 
                 <p class="emo-phrase">Lo más importante es que lo puedas cuidar y amar</p>
                 <div class="btn-div">
-                    <button class="search-button search-button--secondary">Ver todos</button>
+                    <button type="button" class="search-button search-button--secondary">Ver todos</button>
                     <button class="search-button" type="submit" name="submit">Buscar</button>
                 </div>
             </form>
