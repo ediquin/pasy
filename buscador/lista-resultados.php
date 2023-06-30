@@ -123,7 +123,7 @@ $query->execute();
             if ($query->rowCount() > 0) {
                 while ($row = $query->fetch(PDO::FETCH_ASSOC)) {
                     echo    '<article class="pet-list__item">';
-                    echo     '<form action="perfil-mascota.php" method="POST" class= "pet-list__form">';
+                    echo     '<form action="perfil-mascota.php" method="POST" class= "pet-list__form ver-mas-btn">';
                     echo        '<div>';
                     echo            '<img class = "pet-list__thumbnail" src="../bd_img/' . $row['photo'] . '" alt="mascota posando">';
                     echo                '<div>';
@@ -151,7 +151,7 @@ $query->execute();
             ?>
 
             <div class="results__cta">
-                <button class="results__cta--secondary">
+                <button class="results__cta--secondary volver-buscar">
                     Volver a buscar</button>
             </div>
     </main>
