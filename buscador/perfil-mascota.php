@@ -137,7 +137,7 @@ if ($row['health'] == 'Saludable') {
                     </div>
                 </div>
             </article>
-            <form action="dia-visita.php" method="POST">
+            <form action="dia-visita.php" method="POST" class="quiero-visitar-form">
                 <!--input -->
                 <div class="results__cta">
                     <input class="pet-profile__input" name="pet-shelter" value="<?php echo $row['pet_shelter'] ?>">

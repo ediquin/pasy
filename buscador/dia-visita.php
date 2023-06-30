@@ -104,7 +104,7 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
         </section>
 
         <section class="go-visit">
-            <form action="visita-gracias.php" method="POST" class="cta-form-container">
+            <form action="visita-gracias.php" method="POST" class="cta-form-container confirmar-visita-form">
                 <!--input -->
                 <div class="results__cta">
                     <input class="pet-profile__input" name="pet-shelter" value="<?php echo $row['pet_shelter'] ?>">
