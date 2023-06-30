@@ -69,11 +69,11 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
         <span class="tools-visit__indication">Ahora, puedes hacer lo siguiente:</span>
         <article class="tools-visit">
             <!-- links de accion: mapa. whatsapp y donation -->
-            <a href="<?php echo $row2['url_whatsapp_group'] ?>"> <button class="tools-visit__btn"> <img src="../img/whatsapp.svg" alt="">Unirte al grupo</button></a>
-            <a href="<?php echo $row2['url_address'] ?>">
+            <a target="_blank" class="unirte-grupo-wp" href="<?php echo $row2['url_whatsapp_group'] ?>"> <button class="tools-visit__btn"> <img src="../img/whatsapp.svg" alt="">Unirte al grupo</button></a>
+            <a target="_blank" class="ver-mapa-g" href="<?php echo $row2['url_address'] ?>">
                 <button class="tools-visit__btn"> <img src="../img/google maps.svg" alt="">Ver la dirección</button>
             </a>
-            <a href="#">
+            <a target="_blank" class="donar-qr-ty-page" href="../donaciones/donaciones-pasy.html">
                 <button class="tools-visit__btn"> <img src="../img/qr-code-icon.svg" alt="">Donar por QR</button>
             </a>
 
@@ -81,7 +81,7 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
 
         <article class="results__cta">
             <span id="thanks-btn-phrase">La mejor forma de ayudarnos</span>
-            <button class="facebook-share-btn"><a class="facebook-share" href="">Compartir en Facebook</a> </button>
+            <button class="facebook-share-btn"><a target="_blank" class="facebook-share" href="">Compartir en Facebook</a> </button>
             <button class="results__cta--secondary" id="visitThanksHome">Volver al inicio</button>
         </article>
     </section>
