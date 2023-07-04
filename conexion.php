@@ -2,8 +2,8 @@
 
 define('SERVIDOR', 'localhost');
 define('NOMBRE_BD', 'pasy');
-define('USUARIO', 'root');
-define('CLAVE', '');
+define('USUARIO', 'pasy');
+define('CLAVE', 'Cuelita123.');
 $opciones = [PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'];
 
 try {
