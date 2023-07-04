@@ -14,5 +14,5 @@ donateToPetBtn.addEventListener("click", () => alert("in progress"));
 donateToShelterBtn.addEventListener("click", () => alert("in progress"));
 
 donateBtn.addEventListener("click", () => {
-  window.location.href = "../donaciones/donaciones-pasy.html";
+  window.location.href = "../donaciones/donaciones-inicio.html";
 });

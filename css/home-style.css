@@ -1734,7 +1734,7 @@ div:has(.donate-cta) {
   background: #7a4504;
 
   color: var(--white);
-  font-size: 12px;
+  font-size: 1.4rem;
   font-family: Fredoka;
   font-weight: 500;
 }
