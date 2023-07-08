@@ -146,6 +146,7 @@ if ($row['health'] == 'Saludable') {
                 </div>
             </form>
 
+            <!-- FIXME: this need to be more personalized with the image link and the text in the link -->
             <div class="results__cta">
                 <button class="share-whatsapp" onclick="shareWhatsapp()"><img src="../img/whatsapp.svg" alt="">Enviar a un amigo </button>
             </div>

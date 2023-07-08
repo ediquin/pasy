@@ -81,6 +81,7 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
 
         <article class="results__cta">
             <span id="thanks-btn-phrase">La mejor forma de ayudarnos</span>
+            <!-- TODO: FB image share, select another image related to the project -->
             <button class="facebook-share-btn"><a target="_blank" class="facebook-share" href="">Compartir en Facebook</a> </button>
             <button class="results__cta--secondary" id="visitThanksHome">Volver al inicio</button>
         </article>
