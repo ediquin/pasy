@@ -18,7 +18,7 @@ howAdoptPage[0].addEventListener("click", () => {
 logoNavbar[0].addEventListener("click", () => console.log("hello home button"));
 
 donateBtn.addEventListener("click", () => {
-  window.location.href = "donaciones/donaciones-pasy.html";
+  window.location.href = "donaciones/donaciones-inicio.html";
 });
 
 frecuentQuestions.addEventListener("click", () =>

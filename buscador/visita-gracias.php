@@ -73,7 +73,7 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
             <a target="_blank" class="ver-mapa-g" href="<?php echo $row2['url_address'] ?>">
                 <button class="tools-visit__btn"> <img src="../img/google maps.svg" alt="">Ver la dirección</button>
             </a>
-            <a target="_blank" class="donar-qr-ty-page" href="../donaciones/donaciones-pasy.html">
+            <a target="_blank" class="donar-qr-ty-page" href="../donaciones/donaciones-inicio.html">
                 <button class="tools-visit__btn"> <img src="../img/qr-code-icon.svg" alt="">Donar por QR</button>
             </a>
 
@@ -81,6 +81,7 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
 
         <article class="results__cta">
             <span id="thanks-btn-phrase">La mejor forma de ayudarnos</span>
+            <!-- TODO: FB image share, select another image related to the project -->
             <button class="facebook-share-btn"><a target="_blank" class="facebook-share" href="">Compartir en Facebook</a> </button>
             <button class="results__cta--secondary" id="visitThanksHome">Volver al inicio</button>
         </article>

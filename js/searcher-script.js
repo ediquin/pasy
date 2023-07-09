@@ -9,5 +9,5 @@ logoNavbar[0].addEventListener("click", () => {
 });
 
 donateBtn.addEventListener("click", () => {
-  window.location.href = "../donaciones/donaciones-pasy.html";
+  window.location.href = "../donaciones/donaciones-inicio.html";
 });
