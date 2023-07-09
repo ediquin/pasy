@@ -81,7 +81,6 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
 
         <article class="results__cta">
             <span id="thanks-btn-phrase">La mejor forma de ayudarnos</span>
-            <!-- TODO: FB image share, select another image related to the project -->
             <button class="facebook-share-btn"><a target="_blank" class="facebook-share" href="">Compartir en Facebook</a> </button>
             <button class="results__cta--secondary" id="visitThanksHome">Volver al inicio</button>
         </article>
@@ -98,9 +97,9 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
     </script> -->
 
     <script>
-        const imageUrl = "https://www.gocountry105.com/home/engagement/images/adoptApet-v1.jpg";
-        const msg = encodeURIComponent('Hey, check out this image!');
-        const title = encodeURIComponent('Image Title Here');
+        const imageUrl = "../img/share-image-fb.png";
+        const msg = encodeURIComponent('La mejor compañia la puedes adoptar de forma sencilla con PASY');
+        const title = encodeURIComponent('Yo prefiero adoptar una mascota, y tú?');
 
         const fb = document.querySelector('.facebook-share');
         fb.href = `https://www.facebook.com/sharer/sharer.php?u=${imageUrl}&title=${title}&description=${msg}`;

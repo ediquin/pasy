@@ -68,11 +68,12 @@ if ($row['health'] == 'Saludable') {
         })(window, document, 'script', 'dataLayer', 'GTM-59WDXHM');
     </script>
     <!-- End Google Tag Manager -->
+
     <!-- Open Graph meta tags -->
-    <meta property="og:title" content="Esta mascota te puede gustar">
-    <meta property="og:description" content="Si estas buscando una mascota... adoptala!!! Recuerda que debes cuidarla y amarla">
-    <meta property="og:image" content="<?php echo $row['photo'] ?>">
-    <meta property="og:url" content="index.html">
+    <meta property="og:title" content="Esta mascota esta buscando un hogar">
+    <meta property="og:description" content="Animate a visitarlo, te daremos la dirección y un grupo de WhatsApp para más información">
+    <meta property="og:image" content="../img/pasy_thumb_share.png">
+    <meta property="og:url" content="buscador/perfil-mascota.php">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Pasy Mascotas">
 
@@ -146,11 +147,9 @@ if ($row['health'] == 'Saludable') {
                 </div>
             </form>
 
-            <!-- FIXME: this need to be more personalized with the image link and the text in the link -->
             <div class="results__cta">
-                <button class="share-whatsapp" onclick="shareWhatsapp()"><img src="../img/whatsapp.svg" alt="">Enviar a un amigo </button>
+                <button class="share-whatsapp" onclick="shareOnWhatsApp()"><img src="../img/whatsapp.svg" alt="whatsapp icon">Enviar a un amigo </button>
             </div>
-            <!-- form action = "visit-thanks.php" method-->
         </section>
 
         <section class="more-info-pet">
@@ -167,9 +166,9 @@ if ($row['health'] == 'Saludable') {
             <p>
                 <?php echo $row['care'] ?>
             </p>
-            <div>
+            <!-- <div>
                 <button class="donate-cta" id="donateToPet">Donar a la mascota</button>
-            </div>
+            </div> -->
 
         </section>
 
@@ -178,9 +177,9 @@ if ($row['health'] == 'Saludable') {
             <p>
                 <?php echo $row2['description'] ?>
             </p>
-            <div>
+            <!-- <div>
                 <button class="donate-cta" id="donateToShelter">Donar al Albergue</button>
-            </div>
+            </div> -->
         </section>
 
         <section class="visit-advices" id="advices-pop-up">
@@ -204,37 +203,29 @@ if ($row['health'] == 'Saludable') {
 
             <p class="visit-advices__phrase">Nosotros y las mascotas te lo agradeceremos de ❤️</p>
         </section>
+
     </main>
     <script>
-        function shareWhatsapp() {
-            try {
-                var currentUrl = window.location.href;
-                var shareMessage = "Check out this awesome website: " + currentUrl;
-                var thumbnailURL = "https://cdn-icons-png.flaticon.com/256/12/12638.png";
-                var description = "This is my personalized description.";
+        function shareOnWhatsApp() {
+            var pageTitle = encodeURIComponent(document.querySelector('meta[property="og:title"]').getAttribute('content'));
+            var pageDescription = encodeURIComponent(document.querySelector('meta[property="og:description"]').getAttribute('content'));
+            var thumbnailURL = encodeURIComponent(document.querySelector('meta[property="og:image"]').getAttribute('content'));
+            var pageURL = encodeURIComponent(window.location.href);
 
+            var message = "Esta hermosura busca un hogar: " + pageURL;
 
-                var whatsappUrl = "https://wa.me/?text=" + encodeURIComponent(shareMessage) + "&image=" + encodeURIComponent(thumbnailURL) + "&description=" + encodeURIComponent(description);
+            // Create the WhatsApp URL with the personalized message and thumbnail
+            var whatsappURL =
+                "https://wa.me/?text=" +
+                encodeURIComponent(message) +
+                "&source=&data=" +
+                encodeURIComponent(
+                "text=" + message + "&url=" + pageURL + "&preview=" + thumbnailURL
+                );
 
-                // if (!currentUrl.startsWith("http://") && !currentUrl.startsWith("https://")) {
-                //     currentUrl = "https://" + currentUrl;
-                // }
-
-                // WHATS SHARE BUTTON BUT VERSION TWO
-                // function share() {
-                //     try {
-                //         var currentUrl = window.location.href;
-                //         var whatsappUrl = "whatsapp://send?text=" + currentUrl;
-                //         window.open(whatsappUrl);
-                //     } catch (error) {
-                //         alert("An error occurred while sharing the link.");
-                //     }
-                // }
-                window.open(whatsappUrl);
-            } catch (error) {
-                alert("An error occurred while sharing the link.");
+            // Navigate to the WhatsApp share URL in the same tab
+            window.location.href = whatsappURL;
             }
-        }
     </script>
 </body>
 
