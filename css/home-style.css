@@ -235,7 +235,21 @@ main .hero {
   flex: 1;
 }
 
-.info-panel__column p {
+.info-panel__how-adopt-text {
+  font-family: var(--titles-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 19px;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: var(--brand-color-600);
+}
+
+.info-panel__column h3 {
   font-family: var(--titles-font);
   font-style: normal;
   font-weight: 500;
