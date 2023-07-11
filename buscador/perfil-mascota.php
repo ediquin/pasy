@@ -43,13 +43,16 @@ if ($row['health'] == 'Saludable') {
 }
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de mascota</title>
+    <meta name="description"
+        content="Perfil de la mascota en adopción que contiene información como nombre, edad y otros">
+    <link rel="icon" href="../img/favicon-pasy.svg">
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
