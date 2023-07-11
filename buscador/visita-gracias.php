@@ -28,6 +28,9 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracias por confirmar tu visita</title>
+    <meta name="description"
+        content="Página de gratitud por confirmar tu visita y ayudar a una mascota">
+    <link rel="icon" href="../img/favicon-pasy.svg">
     <!-- Google Tag Manager -->
     <script>
         (function(w, d, s, l, i) {
