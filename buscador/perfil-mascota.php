@@ -75,17 +75,17 @@ if ($row['health'] == 'Saludable') {
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Esta mascota esta buscando un hogar">
     <meta property="og:description" content="Animate a visitarlo, te daremos la dirección y un grupo de WhatsApp para más información">
-    <meta property="og:image" content="../img/pasy_thumb_share.png">
-    <meta property="og:url" content="buscador/perfil-mascota.php">
+    <meta property="og:image" content="https://pasymascotas.com/img/pasy_thumb_share.png">
+    <meta property="og:url" content="https://pasymascotas.com">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Pasy Mascotas">
+    <meta property="og:site_name" content="PASY Mascotas">
 
-    <link rel="stylesheet" href="../css/home-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet" rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/home-style.css">
     <!-- scripts -->
     <script src="../js/pet-profile-script.js" defer></script>
 </head>
@@ -151,7 +151,7 @@ if ($row['health'] == 'Saludable') {
             </form>
 
             <div class="results__cta">
-                <button class="share-whatsapp" onclick="shareOnWhatsApp()"><img src="../img/whatsapp.svg" alt="whatsapp icon">Enviar a un amigo </button>
+                <button class="share-whatsapp" id="whatsapp-share"><img src="../img/whatsapp.svg" alt="whatsapp icon">Enviar a un amigo </button>
             </div>
         </section>
 
@@ -209,26 +209,10 @@ if ($row['health'] == 'Saludable') {
 
     </main>
     <script>
-        function shareOnWhatsApp() {
-            var pageTitle = encodeURIComponent(document.querySelector('meta[property="og:title"]').getAttribute('content'));
-            var pageDescription = encodeURIComponent(document.querySelector('meta[property="og:description"]').getAttribute('content'));
-            var thumbnailURL = encodeURIComponent(document.querySelector('meta[property="og:image"]').getAttribute('content'));
-            var pageURL = encodeURIComponent(window.location.href);
-
-            var message = "Esta hermosura busca un hogar: " + pageURL;
-
-            // Create the WhatsApp URL with the personalized message and thumbnail
-            var whatsappURL =
-                "https://wa.me/?text=" +
-                encodeURIComponent(message) +
-                "&source=&data=" +
-                encodeURIComponent(
-                "text=" + message + "&url=" + pageURL + "&preview=" + thumbnailURL
-                );
-
-            // Navigate to the WhatsApp share URL in the same tab
-            window.location.href = whatsappURL;
-            }
+        document.getElementById('whatsapp-share').addEventListener('click', function() {
+        var url = 'whatsapp://send?text=Esta mascotas busca un hogar y tú eres el afortunado: ' + encodeURIComponent(window.location.href);
+        window.open(url, '_blank');
+        });
     </script>
 </body>
 
