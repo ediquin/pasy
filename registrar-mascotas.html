@@ -11,122 +11,97 @@
 <body>
     <h1 class="heading">Registro de mascotas</h1>
     <main>
-        <form action="" class="form">
+        <form action="./guardar-datos.php" class="form" method="post" enctype="multipart/form-data">
             <!-- Pet name -->
             <label class="form__label" for="pet-name">
                 <p class="form__label-text">Nombre:</p>
-                <input class="form__input" type="text" name="pet-name" placeholder="de la mascota">
+                <input class="form__input" type="text" name="pet_name" placeholder="de la mascota">
             </label>
 
             <!-- Pet specie -->
             <label class="form__label" for="pet-specie">
                 <p class="form__label-text">Especie:</p>
-                <select class="form__select" name="pet-specie">
-                    <option class="form__option" value="cat">Gato</option>
-                    <option class="form__option" value="dog">Perro</option>
+                <select class="form__select" name="pet_specie">
+                    <option class="form__option" value="Gato">Gato</option>
+                    <option class="form__option" value="Perro">Perro</option>
                 </select>
             </label>
 
             <!-- Pet gender -->
             <label class="form__label" for="pet-gender">
                 <p class="form__label-text">Género (sexo):</p>
-                <select class="form__select" name="pet-gender">
-                    <option class="form__option" value="male">Macho</option>
-                    <option class="form__option" value="female">Hembra</option>
+                <select class="form__select" name="pet_gender">
+                    <option class="form__option" value="Macho">Macho</option>
+                    <option class="form__option" value="Hembra">Hembra</option>
                 </select>
             </label>
 
             <label class="form__label" for="pet-age">
-                <p class="form__label-text">Edad:</p>
-                <select class="form__select" name="pet-age">
-                    <option class="form__option" value="less-1-years">Menor a 1 año</option>
-                    <option class="form__option" value="1-2-years">1 a 2 años</option>
-                    <option class="form__option" value="3-4-years">3 a 4 años</option>
-                    <option class="form__option" value="more-5-years">Mayor a 5 años</option>
-                </select>
+                <p class="form__label-text">Edad en años y meses:</p>
+                <input type="number" class="form__input" name="pet_age_years" placeholder="años de la mascota" min="0" max="20">
+                <input type="number" class="form__input" name="pet_age_months" placeholder="meses de la mascota" min="0" max="11">
             </label>
 
             <label class="form__label" for="pet-size">
                 <p class="form__label-text">Tamaño:</p>
-                <select class="form__select" name="pet-size">
-                    <option class="form__option" value="little">Pequeño</option>
-                    <option class="form__option" value="middle">Mediano</option>
-                    <option class="form__option" value="large">Grande</option>
+                <select class="form__select" name="pet_size">
+                    <option class="form__option" value="Pequeño">Pequeño</option>
+                    <option class="form__option" value="Mediano">Mediano</option>
+                    <option class="form__option" value="Grande">Grande</option>
                 </select>
             </label>
 
             <label class="form__label" for="pet-health">
                 <p class="form__label-text">Estado de salud:</p>
-                <select class="form__select" name="pet-health">
-                    <option class="form__option" value="sick">Necesita atención</option>
-                    <option class="form__option" value="healthy">Saludable</option>
-                    <option class="form__option" value="treatment">En tratamiento</option>
+                <select class="form__select" name="pet_health">
+                    <option class="form__option" value="Necesita atención">Necesita atención</option>
+                    <option class="form__option" value="Saludable">Saludable</option>
+                    <option class="form__option" value="En tratamiento">En tratamiento</option>
                 </select>
             </label>
 
             <label class="form__label" for="pet-health-details">
                 <p class="form__label-text">Detalles de la salud:</p>
-                <textarea class="form__input" name="pet-health-details" rows="4" cols="50"
+                <textarea class="form__input" name="pet_health_details" rows="4" cols="50"
                     placeholder="Da detalles del estado de salud de la mascota para el posible adoptante"></textarea>
             </label>
 
             <label class="form__label" for="pet-mood">
                 <p class="form__label-text">Caracter o humor:</p>
-                <select class="form__select" name="pet-mood">
-                    <option class="form__option" value="friendly">Amigable</option>
-                    <option class="form__option" value="shy">Timido</option>
-                    <option class="form__option" value="playful">Jugueton</option>
-                    <option class="form__option" value="calm">Tranquilo</option>
-                    <option class="form__option" value="independent">Independiente</option>
-                    <option class="form__option" value="warning ">Atencion</option>
+                <select class="form__select" name="pet_mood">
+                    <option class="form__option" value="Amigable">Amigable</option>
+                    <option class="form__option" value="Tímido">Timido</option>
+                    <option class="form__option" value="Jugueton">Jugueton</option>
+                    <option class="form__option" value="Tranquilo">Tranquilo</option>
+                    <option class="form__option" value="Independiente">Independiente</option>
+                    <option class="form__option" value="Atención ">Atencion</option>
                 </select>
             </label>
 
-            <label class="form__label" for="pet-mood-details">
+            <label class="form__label" for="pet_mood_details">
                 <p class="form__label-text">Detalles del caracter o humor:</p>
-                <textarea class="form__input" name="pet-mood-details" rows="4" cols="50"
+                <textarea class="form__input" name="pet_mood_details" rows="4" cols="50"
                     placeholder="Da detalles del caracter de la mascota para el posible adoptante"></textarea>
             </label>
 
-            <label class="form__label" for="pet-addres">
+            <label class="form__label" for="pet_address">
                 <p class="form__label-text">Dirección:</p>
-                <textarea class="form__input" name="pet-addres" rows="2" cols="50"
+                <textarea class="form__input" name="pet_address" rows="2" cols="50"
                     placeholder="Trata de dar detalles, lugares de referencia, o minibuses que pasen por el lugar"></textarea>
             </label>
 
-            <label class="form__label" for="pet-shelter">
+            <label class="form__label" for="pet_shelter">
                 <p class="form__label-text">Es de un albergue? Anota su nombre:</p>
-                <input class="form__input" type="text" name="pet-shelter"
+                <input class="form__input" type="text" name="pet_shelter"
                     placeholder="El nombre del albergue y como se lo encuentra en redes sociales">
             </label>
 
-            <label class="form__label" for="pet-shelter-details">
-                <p class="form__label-text">Dirección:</p>
-                <textarea class="form__input" name="pet-shelter-details" rows="2" cols="50"
-                    placeholder="Detalles o historia del albergue"></textarea>
-            </label>
-
-            <label class="form__label" for="pet-whatsapp">
-                <p class="form__label-text">Link de WhatsApp:</p>
-                <input class="form__input" type="text" name="pet-whatsapp"
-                    placeholder="Genera un link de grupo de WhatsApp y pégalo aquí">
-            </label>
-
-            <label class="form__label" for="pet-google-maps">
-                <p class="form__label-text">Link de Google Maps:</p>
-                <input class="form__input" type="text" name="pet-google-maps"
-                    placeholder="Genera un link en Google Maps y pégalo aquí">
-            </label>
-
-            <label for="pet-take-photo" class="form__label">
+            <label for="pet_upload_photo" class="form__label">
                 <p class="form__label-text">Toma una foto de la mascota</p>
-                <input class="form__input" type="file" accept="image/*" capture="environment" name="pet-take-photo">
+                <input class="form__input" type="file" accept="image/*" capture="environment" name="pet_upload_photo">
             </label>
 
-            <label for="pet-upload-photo" class="form__label">
-                <p class="form__label-text">Sube una foto de tu mascota</p>
-                <input class="form__input" type="file" accept="image/*" name="pet-upload-photo">
-            </label>
+          
 
             <button type="submit" class="form__button">Enviar</button>
         </form>
