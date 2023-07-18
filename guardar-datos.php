@@ -1,5 +1,6 @@
 <?php
-include('conexion.php');
+include_once('conexion.php');
+session_start();
 
 if (isset($_POST)) {
     $db = $pdo;
@@ -23,11 +24,17 @@ if (isset($_POST)) {
 		move_uploaded_file($tmpFoto, "./bd_img/".$nombreArchivo);
 	}
 
+    try{
 		//hacer uso de una declaración preparada para prevenir la inyección de sql
 		$stmt = $db->prepare("INSERT INTO mascotas (name, specie, gender, age_years, age_months, size, health, care, temperament, description, address, pet_shelter, photo) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		//instrucción if-else en la ejecución de nuestra declaración preparada
-		$stmt->execute([$name, $specie, $gender, $age_years, $age_months, $size, $health, $care, $temperament, $description, $address, $pet_shelter, $nombreArchivo]) ? 'Usuario guardado correctamente' : 'Algo salió mal. No se puede agregar miembro';	
+		$_SESSION['message'] = ( $stmt->execute([$name, $specie, $gender, $age_years, $age_months, $size, $health, $care, $temperament, $description, $address, $pet_shelter, $nombreArchivo]) ) ? 'Usuario guardado correctamente' : 'Algo salió mal. No se puede agregar miembro';	
 		print_r($stmt);
+		print_r($_SESSION['message']);
+	}
+	catch(PDOException $e){
+		$_SESSION['message'] = $e->getMessage();
+	}
 
 	//cerrar la conexion
 	$db = null;
