@@ -43,7 +43,7 @@ if (isset($_POST)) {
 require "../conexion.php";
 $sql = "SELECT *
 FROM mascotas
-WHERE gender = '$gender' AND size = '$size' AND '$age_min' <= age_years AND age_years <= '$age_max' 
+WHERE gender = '$gender' AND size = '$size' AND '$age_min' <= age_years AND age_years <= '$age_max' AND specie = '$specie'
 ORDER BY id DESC;";
 $query = $pdo->prepare($sql);
 $query->execute();
