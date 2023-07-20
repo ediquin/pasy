@@ -209,7 +209,7 @@ if ($row['health'] == 'Saludable') {
 
     </main>
     <script>
-        document.getElementById('whatsapp-share').addEventListener('click', function() {
+        document.getElementById("whatsapp-share").addEventListener('click', function() {
         var url = 'whatsapp://send?text=Esta mascota busca un hogar ' + encodeURIComponent(window.location.href);
         window.open(url, '_blank');
         });
