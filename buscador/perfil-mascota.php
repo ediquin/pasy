@@ -74,7 +74,7 @@ if ($row['health'] == 'Saludable') {
 
     <!-- Open Graph meta tags -->
     <meta property="og:title" content="Esta mascota esta buscando un hogar">
-    <meta property="og:description" content="Animate a visitarlo, te daremos la dirección y un grupo de WhatsApp para más información">
+    <meta property="og:description" content="Ya puedes visitarlo, te daremos la dirección y un grupo de WhatsApp para más información">
     <meta property="og:image" content="https://pasymascotas.com/img/pasy_thumb_share.png">
     <meta property="og:url" content="https://pasymascotas.com">
     <meta property="og:type" content="website">
@@ -210,7 +210,7 @@ if ($row['health'] == 'Saludable') {
     </main>
     <script>
         document.getElementById('whatsapp-share').addEventListener('click', function() {
-        var url = 'whatsapp://send?text=Esta mascotas busca un hogar y tú eres el afortunado: ' + encodeURIComponent(window.location.href);
+        var url = 'whatsapp://send?text=Esta mascota busca un hogar ' + encodeURIComponent(window.location.href);
         window.open(url, '_blank');
         });
     </script>
