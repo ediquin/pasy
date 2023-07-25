@@ -109,7 +109,13 @@ if ($row['health'] == 'Saludable') {
     <main class="pet-profile-body">
         <section class="pet-profile">
             <article class="pet-profile__carousel">
-                <img src="../bd_img/<?php echo $row['photo'] ?>" alt="carrusel de fotografias de la mascota">
+                <div class="pet-profile__carousel-wrap">
+                TODO: Make the carousel for three photos of the pet
+                    <img src="../img/photo-draft-1.jpg" alt="foto de mascota">
+                    <img src="../img/photo-draft-2.jpg" alt="foto de mascota">
+                    <img src="../img/photo-draft-3.jpg" alt="foto de mascota">
+                    <!-- <img src="../bd_img/<?php echo $row['photo'] ?>" alt="carrusel de fotografias de la mascota"> -->
+                </div>
                 <h1><?php echo $name ?></h1>
             </article>
 

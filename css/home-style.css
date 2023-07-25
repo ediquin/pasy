@@ -989,6 +989,22 @@ section .searcher-page__title {
   margin-bottom: 16px;
 }
 
+.pet-profile__carousel-wrap {
+  aspect-ratio: 4/5;
+  position: relative;
+  display: flex;
+  overflow: scroll;
+}
+
+.pet-profile__carousel-wrap img {
+  width: 100%;
+  left: 0;
+  position: sticky;
+  object-fit: cover;
+  border-radius: 8px;
+  scroll-snap-align: center;
+}
+
 .pet-profile__carousel h1 {
   font-family: var(--titles-font);
   font-style: normal;
