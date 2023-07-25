@@ -1656,42 +1656,45 @@ div:has(.donate-cta) {
   padding-top: 36px;
   display: flex;
   flex-direction: column;
-  background-image: url("../img/bg_pagina_donaciones.png");
-  background-size: cover;
-  background-position: top;
-  object-fit: cover;
   align-items: center;
   border-radius: 0 0 24px 24px;
 }
 
 .why-donate__title {
   font-family: var(--titles-font);
-  color: var(--white);
+  color: var(--brand-color-700);
   text-align: center;
-  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-size: 3.2rem;
   font-weight: 600;
   margin-bottom: 32px;
 }
-.why-donate__video {
+.why-donate__img {
   width: 100%;
   max-width: 500px;
 }
 
 .why-donate__text {
   margin-bottom: 4px;
-  color: var(--white);
-  font-size: 2.4rem;
+  margin-top: 16px;
+  color: var(--grey-color-600);
+  font-size: 1.6rem;
   font-family: var(--texts-font);
   font-weight: 500;
 }
 
 .why-donate__description {
   margin-bottom: 4px;
-  color: var(--white);
+  color: var(--grey-color-600);
   font-size: 1.6rem;
   font-family: var(--texts-font);
   font-weight: 500;
+}
+
+.shelter-social-media {
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  padding: 16px;
 }
 
 .steps-donate {
