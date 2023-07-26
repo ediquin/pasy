@@ -74,30 +74,67 @@
 
       <!-- TODO: Put toggles donate & volunteer__ i can put the options for donate and for volunteer in toggles only using HTML, in addition for use the lazy charge can be better than create another page -->
       <section class="steps-donate">
-        <p class="steps-donate__title">Pasos para donar</p>
-        <div class="steps-donate__chain">
-          <img src="../img/donar_paso_1.svg" alt="icono para paso uno" />
-          <p>Guarda el QR, haz un screenshot o descarga la imagen</p>
-          <img src="../img/donar_paso_2.svg" alt="icono para paso dos" />
-          <p>Abri la app de tu banco y busca la opción de "QR"</p>
-          <img src="../img/donar_paso_3.svg" alt="icono para paso tres" />
+        <details class="donate-money-block">
+          <summary class="donate-money-block__title">
+            ¿Cómo puedo donar?
+          </summary>
           <p>
-            Seguí las indicaciones de la app de tu banco y confirma el asunto de
-            la tranferencia
+            Hey!, recibimos donaciones monetarias y en especie (comida, ropa,
+            etc.)
           </p>
+          <p class="steps-donate__title">Pasos para donar dinero</p>
+          <div class="steps-donate__chain">
+            <img src="../img/donar_paso_1.svg" alt="icono para paso uno" />
+            <p>Guarda el QR, haz un screenshot o descarga la imagen</p>
+            <img src="../img/donar_paso_2.svg" alt="icono para paso dos" />
+            <p>Abri la app de tu banco y busca la opción de "QR"</p>
+            <img src="../img/donar_paso_3.svg" alt="icono para paso tres" />
+            <p>
+              Seguí las indicaciones de la app de tu banco y confirma el asunto
+              de la tranferencia
+            </p>
+            <img
+              src="../img/donar_paso_4.svg"
+              alt="flecha indicando donde esta el QR"
+            />
+          </div>
+
           <img
-            src="../img/donar_paso_4.svg"
-            alt="flecha indicando donde esta el QR"
+            src="../img/qr_example.png"
+            alt="codigo QR de donacion"
+            class="steps-donate__img"
+            loading="lazy"
           />
-        </div>
-        <img
-          src="../img/qr_example.png"
-          alt="codigo QR de donacion"
-          class="steps-donate__img"
-        />
-        <a class="steps-donate__btn" href="../img/qr_example.png" download
-          >Descargar</a
-        >
+          <a class="steps-donate__btn" href="../img/qr_example.png" download
+            >Descargar
+          </a>
+          <p>Para doner en especie solo mándanos un mensaje</p>
+          <img src="" alt="ilustracion de casita de mascota" />
+          <button>Envía un mensaje</button>
+        </details>
+
+        <details class="donate-kind-block">
+          <summary class="donate-kind-block__title">
+            ¿Cómo puedo ser voluntario?
+          </summary>
+          <p>Necesitaremos tu ayuda en:</p>
+          <ul class="donate-kind-block__list">
+            <li>Limpiar, barrer y lavar el habitat de los peluditos</li>
+            <li>
+              Acompañar a las mascotas, acariciarlas y estar pendientes de ellas
+            </li>
+            <li>
+              Refaccionar muebles y paredes, para que los peluditos estén más
+              cómodos
+            </li>
+          </ul>
+          <p>Puedes ayudarnos en estos horarios:</p>
+          <p class="donate-kind-block__hours">
+            De lunes a domingo, Mañanas de 10:00 a 13:00 Tardes de 16:00 a 19:00
+          </p>
+          <p>Comunícate con nosotros</p>
+          <button>Enviar mensaje</button>
+        </details>
       </section>
     </main>
     <button class="donate-go-home">Volver al inicio</button>
