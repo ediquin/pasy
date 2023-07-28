@@ -1692,11 +1692,15 @@ div:has(.donate-cta) {
 
 .shelter-social-media {
   width: 100%;
+  margin: 0 auto;
   max-width: 700px;
   text-align: center;
   padding: 16px;
 }
 
+.shelter-social-media a {
+  margin: 0 8px;
+}
 .steps-donate {
   width: 100%;
   max-width: 700px;
@@ -1801,7 +1805,8 @@ div:has(.donate-cta) {
   margin: 4px auto;
 }
 
-.donate-money-block button {
+.donate-money-block button,
+.donate-kind-block button {
   margin-top: 8px;
   background-color: #23b659;
   gap: 8px;
@@ -1817,6 +1822,61 @@ div:has(.donate-cta) {
 
 .donate-money-block img {
   margin: 4px auto;
+}
+
+.donate-kind-block {
+  display: flex;
+  justify-content: center;
+}
+
+.donate-kind-block p:nth-child(2) {
+  font-family: var(--titles-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.donate-kind-block__list {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: start;
+}
+
+.donate-kind-block__list li {
+  font-family: var(--texts-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 8px 0;
+}
+
+.donate-kind-block p:nth-child(4) {
+  font-family: var(--titles-font);
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.donate-kind-block__hours {
+  font-family: var(--texts-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin: 8px 0;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px;
+  line-height: 24px;
+}
+
+.donate-kind-block p:nth-child(6) {
+  font-family: var(--titles-font);
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-top: 8px;
+  color: var(--grey-color-400);
+  opacity: 0.8;
+  margin-bottom: 8px;
 }
 
 .donate-go-home {
