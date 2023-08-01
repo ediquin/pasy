@@ -990,7 +990,7 @@ section .searcher-page__title {
 }
 
 .pet-profile__carousel-wrap {
-  aspect-ratio: 4/5;
+  aspect-ratio: 1/1;
   position: relative;
   display: flex;
   overflow: scroll;
@@ -1016,6 +1016,13 @@ section .searcher-page__title {
   text-align: center;
 
   color: var(--grey-color-500);
+  margin-bottom: 8px;
+}
+
+.pet-profile__carousel span {
+  font-family: var(--titles-font);
+  color: var(--grey-color-400);
+  font-size: 1.2rem;
   margin-bottom: 8px;
 }
 

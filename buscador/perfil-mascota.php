@@ -50,8 +50,7 @@ if ($row['health'] == 'Saludable') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil de mascota</title>
-    <meta name="description"
-        content="Perfil de la mascota en adopción que contiene información como nombre, edad y otros">
+    <meta name="description" content="Perfil de la mascota en adopción que contiene información como nombre, edad y otros">
     <link rel="icon" href="../img/favicon-pasy.svg">
     <!-- Google Tag Manager -->
     <script>
@@ -110,12 +109,13 @@ if ($row['health'] == 'Saludable') {
         <section class="pet-profile">
             <article class="pet-profile__carousel">
                 <div class="pet-profile__carousel-wrap">
-                TODO: Make the carousel for three photos of the pet
+                    <!-- TODO: Check the carousel with the database -->
                     <img src="../img/photo-draft-1.jpg" alt="foto de mascota">
                     <img src="../img/photo-draft-2.jpg" alt="foto de mascota">
                     <img src="../img/photo-draft-3.jpg" alt="foto de mascota">
                     <!-- <img src="../bd_img/<?php echo $row['photo'] ?>" alt="carrusel de fotografias de la mascota"> -->
                 </div>
+                <span>Desliza para ver más fotos</span>
                 <h1><?php echo $name ?></h1>
             </article>
 
@@ -216,8 +216,8 @@ if ($row['health'] == 'Saludable') {
     </main>
     <script>
         document.getElementById("whatsapp-share").addEventListener('click', function() {
-        var url = 'whatsapp://send?text=Esta mascota busca un hogar ' + encodeURIComponent(window.location.href);
-        window.open(url, '_blank');
+            var url = 'whatsapp://send?text=Esta mascota busca un hogar ' + encodeURIComponent(window.location.href);
+            window.open(url, '_blank');
         });
     </script>
 </body>
