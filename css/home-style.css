@@ -408,8 +408,19 @@ main .hero {
   width: 100%;
   max-width: 700px;
   margin: 0 auto;
+  font-size: 2.4rem;
+  padding: 0 16px;
+}
+
+.doubts-panel a {
+  text-decoration: none;
+  display: flex;
   padding: 0 16px;
   gap: 8px;
+}
+
+.doubts-panel a p {
+  font-size: 2.4rem;
 }
 
 .doubts-panel__title {
@@ -427,13 +438,14 @@ main .hero {
 .doubts-panel__option {
   display: flex;
   align-items: center;
-  padding: 8px 16px;
+  padding: 16px 16px;
   gap: 16px;
 
   background: #fadebd;
   border-radius: 8px;
 
   margin-bottom: 8px;
+  justify-content: center;
 }
 
 .doubts-panel__option p {
@@ -1677,7 +1689,7 @@ div:has(.donate-cta) {
   margin-bottom: 4px;
   margin-top: 16px;
   color: var(--grey-color-600);
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   font-family: var(--texts-font);
   font-weight: 400;
   text-align: justify;
@@ -1722,6 +1734,15 @@ div:has(.donate-cta) {
   flex-direction: column;
 }
 
+.donations-background {
+  background-color: #fadebd;
+  border-radius: 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .steps-donate__title {
   color: var(--brand-color-700);
   text-align: center;
@@ -1729,6 +1750,7 @@ div:has(.donate-cta) {
   font-family: var(--texts-font);
   font-weight: 500;
   margin-bottom: 16px;
+  margin-top: 8px;
 }
 
 .steps-donate__chain {
@@ -1845,9 +1867,10 @@ div:has(.donate-cta) {
   font-size: 1.6rem;
   font-weight: 500;
   margin-top: 8px;
+  color: var(--grey-color-400);
 }
 
-.donate-kind-block__list {
+.donations-background .donate-kind-block__list {
   max-width: 400px;
   margin: 0 auto;
   padding: 16px;
@@ -1862,7 +1885,7 @@ div:has(.donate-cta) {
   margin: 8px 0;
 }
 
-.donate-kind-block p:nth-child(4) {
+.donate-kind-block p:nth-child(5) {
   font-family: var(--titles-font);
   font-size: 1.6rem;
   font-weight: 500;
@@ -1876,8 +1899,6 @@ div:has(.donate-cta) {
   margin: 8px 0;
   max-width: 400px;
   margin: 0 auto;
-  padding: 16px;
-  padding-top: 8px;
   line-height: 24px;
 }
 
