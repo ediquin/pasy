@@ -58,8 +58,7 @@ $query->execute();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de resultados</title>
-    <meta name="description"
-        content="Lista de resultados del buscador de mascotas ordenados">
+    <meta name="description" content="Lista de resultados del buscador de mascotas ordenados">
     <link rel="icon" href="../img/favicon-pasy.svg">
 
     <!-- Google Tag Manager -->

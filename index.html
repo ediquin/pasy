@@ -1,131 +1,230 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-FYPN3JSV2Q"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
+      gtag("config", "G-FYPN3JSV2Q");
+    </script>
+    <!-- normal tags -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encuentra mascotas en adopción con PASY</title>
+    <meta
+      name="description"
+      content="Encuentra tu compañero peludo ideal en nuestra plataforma de adopción de mascotas. ¡Adopta hoy y cambia una vida!"
+    />
+    <link rel="icon" href="./img/favicon-pasy.svg" />
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="Encuentra una mascota con PASY" />
+    <meta
+      property="og:description"
+      content="Puedes adoptar a tu compañero peludo ideal en alguno de los albergues de La Paz"
+    />
+    <meta property="og:image" content="img/pasy_thumb_share.png" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PASY Mascotas" />
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FYPN3JSV2Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-59WDXHM");
+    </script>
+    <!-- End Google Tag Manager -->
 
-    gtag('config', 'G-FYPN3JSV2Q');
-  </script>
-  <!-- normal tags -->
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Encuentra mascotas en adopción con PASY</title>
-  <meta name="description"
-    content="Encuentra tu compañero peludo ideal en nuestra plataforma de adopción de mascotas. ¡Adopta hoy y cambia una vida!">
-  <link rel="icon" href="./img/favicon-pasy.svg">
-  <!-- Open Graph meta tags -->
-  <meta property="og:title" content="Encuentra una mascota con PASY">
-  <meta property="og:description"
-    content="Puedes adoptar a tu compañero peludo ideal en alguno de los albergues de La Paz">
-  <meta property="og:image" content="img/pasy_thumb_share.png">
-  <meta property="og:url" content="index.html">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="PASY Mascotas">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap"
+      rel="stylesheet"
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/home-style.css" />
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-59WDXHM');</script>
-  <!-- End Google Tag Manager -->
+    <script src="./js/main-script.js" defer></script>
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet"
-    rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="./css/home-style.css">
-
-  <script src="./js/main-script.js" defer></script>
-</head>
-
-<body>
-  <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-59WDXHM" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
-  <!-- End Google Tag Manager (noscript) -->
-  <h1 style="display: none;">Encuentra mascotas en adopción con PASY</h1>
-  <header>
-    <nav class="nav-bar">
-      <span class="nav-bar__logo">PASY</span>
-      <div class="nav-bar__btns">
-        <button class="nav-bar__donate-btn">
-          Donar
-          <img src="img/green-heart__nav-bar-icon.svg" alt="green heart" />
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-59WDXHM"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <h1 style="display: none">Encuentra mascotas en adopción con PASY</h1>
+    <header>
+      <nav class="nav-bar">
+        <span class="nav-bar__logo">PASY</span>
+        <div class="nav-bar__btns">
+          <button class="nav-bar__donate-btn">
+            Donar
+            <img src="img/green-heart__nav-bar-icon.svg" alt="green heart" />
+          </button>
+          <img
+            class="nav-bar__menu-icon"
+            src="img\burguer-menu__nav-bar-icon.svg"
+            alt="burguer menu icon"
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- This is the hero section, includes the CTA, a phrase and a photo or media, is like the landing page for the project -->
+      <section class="hero">
+        <h1 class="hero__title">Encuentra mascotas en adopción</h1>
+        <button class="hero__cta searchPetGA" id="heroCta">
+          <img src="./img/paw-icon.svg" alt="paw icon" />
+          BUSCAR UNA MASCOTA
         </button>
-        <img class="nav-bar__menu-icon" src="img\burguer-menu__nav-bar-icon.svg" alt="burguer menu icon" />
-      </div>
-    </nav>
-  </header>
-  <main>
-    <!-- This is the hero section, includes the CTA, a phrase and a photo or media, is like the landing page for the project -->
-    <section class="hero">
-      <h1 class="hero__title">Encuentra mascotas en adopción</h1>
-      <button class="hero__cta searchPetGA" id="heroCta">
-        <img src="./img/paw-icon.svg" alt="paw icon" />
-        BUSCAR UNA MASCOTA
-      </button>
-      <span class="hero__cta-support">Un hogar, una mascota</span>
-    </section>
-    <!-- Panel dedicated for show basic information about adoption process, includes 3 questions and 1 space for positive facts or news -->
-    <section class="info-panel">
-      <div class="info-panel__container">
-        <h2 class="info-panel__title">Más información</h2>
-        <div class="info-panel__how-adopt">
-          <img class="info-panel__how-adopt-img" src="./img/how-adopt__info-panel.svg"
-            alt="emoticons for dog, cat and a house" />
-          <h3 class="info-panel__how-adopt-text">¿Cómo puedo adoptar una mascota?</h3>
-        </div>
-        <div class="info-panel__two-columns">
-          <div class="info-panel__column" id="faq-box">
-            <img src="./img/usual-questions__info-panel.svg" alt=" questions marks" />
-            <h3>Preguntas frecuentes</h3>
+        <span class="hero__cta-support">Un hogar, una mascota</span>
+      </section>
+      <!-- Panel dedicated for show basic information about adoption process, includes 3 questions and 1 space for positive facts or news -->
+      <section class="info-panel">
+        <div class="info-panel__container">
+          <h2 class="info-panel__title">Más información</h2>
+          <div class="info-panel__how-adopt">
+            <img
+              class="info-panel__how-adopt-img"
+              src="./img/how-adopt__info-panel.svg"
+              alt="emoticons for dog, cat and a house"
+            />
+            <h3 class="info-panel__how-adopt-text">
+              ¿Cómo puedo adoptar una mascota?
+            </h3>
           </div>
-          <div class="info-panel__column" id="in-adoption-box">
-            <img src="./img/give-adopt__info-panel.svg" alt=" two hands praying" />
-            <h3>¿Cómo dar en adopción?</h3>
+          <div class="info-panel__two-columns">
+            <div class="info-panel__column" id="faq-box">
+              <img
+                src="./img/usual-questions__info-panel.svg"
+                alt=" questions marks"
+              />
+              <h3>Preguntas frecuentes</h3>
+            </div>
+            <div class="info-panel__column" id="in-adoption-box">
+              <img
+                src="./img/give-adopt__info-panel.svg"
+                alt=" two hands praying"
+              />
+              <h3>¿Cómo dar en adopción?</h3>
+            </div>
+          </div>
+          <div class="info-panel__facts">
+            <p>Formar hogares con mascotas amadas, es nuestra misión</p>
+            <img
+              src="./img/facts-image__info-panel.svg"
+              alt="related to the new of fact"
+            />
           </div>
         </div>
-        <div class="info-panel__facts">
-          <p>Formar hogares con mascotas amadas, es nuestra misión</p>
-          <img src="./img/facts-image__info-panel.svg" alt="related to the new of fact" />
+      </section>
+
+      <section class="pets-showcase">
+        <!-- <h2 class="pets-showcase__title">Mascotas cerca de ti</h2>
+        <div class="pets-showcase__grid">
+          <div class="pets-showcase__card">
+            <img src="./img/pet-photo__pet-showcase.png" alt="pet photo" />
+            <p>Filogmeno</p>
+            <span>Macho - Villa Adela</span>
+          </div>
+          <div class="pets-showcase__card">
+            <img src="./img/pet-photo__pet-showcase.png" alt="pet photo" />
+            <p>Filogmeno</p>
+            <span>Macho - Villa Adela</span>
+          </div>
+
+          <div class="pets-showcase__card">
+            <img src="./img/pet-photo__pet-showcase.png" alt="pet photo" />
+            <p>Filogmeno</p>
+            <span>Macho - Villa Adela</span>
+          </div>
+          <div class="pets-showcase__card">
+            <img src="./img/pet-photo__pet-showcase.png" alt="pet photo" />
+            <p>Filogmeno</p>
+            <span>Macho - Villa Adela</span>
+          </div>
+        </div> -->
+      </section>
+
+      <section class="doubts-panel">
+        <!-- <div class="doubts-panel__option doubts-panel__option--secondary">
+        <a href="">
+          <img src="./img/pet-list-icon__doubts-panel.svg" alt="dog face icon" />
+          <p>Lista de mascotas disponibles</p>
+        </a>
+      </div> -->
+
+        <div class="doubts-panel__option doubts-panel__option--secondary">
+          <a href="./donaciones/donaciones-inicio.html">
+            <p>🏠 Lista de albergues amigos</p>
+          </a>
         </div>
+      </section>
+
+      <div class="ask-opinion">
+        <img
+          src="./img/agarre-manos.svg"
+          alt="agarre de manos para pedir opinion"
+        />
+        <a
+          class="suggest-box__btn"
+          href="https://docs.google.com/forms/d/e/1FAIpQLSc2GcgdoTXtN7q0QvduGtjQ4qNzEaVzBFPWWUlHkVlTYKNzOA/viewform?usp=sf_link"
+          target="_blank"
+        >
+          Envíanos sugerencias
+        </a>
       </div>
-    </section>
+    </main>
 
-    <div class="ask-opinion">
-      <img src="./img/agarre-manos.svg" alt="agarre de manos para pedir opinion">
-      <a class="suggest-box__btn"
-        href="https://docs.google.com/forms/d/e/1FAIpQLSc2GcgdoTXtN7q0QvduGtjQ4qNzEaVzBFPWWUlHkVlTYKNzOA/viewform?usp=sf_link"
-        target="_blank">
-        Envíanos sugerencias
-      </a>
-    </div>
-  </main>
-
-  <footer class="footer">
-    <div class="footer__creator-sign">
-      <img src="./img/logo_desarrollador.png" alt="logo del equipo de desarrollo" />
-      <span>Powered by @beichooo & @ediquin</span>
-    </div>
-    <div class="footer__social-media">
-      <img src="https://www.svgrepo.com/show/349530/tiktok.svg" alt="tiktok logo" />
-      <img src="https://www.svgrepo.com/show/452196/facebook-1.svg" alt="facebook logo" />
-    </div>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <div class="footer__creator-sign">
+        <img
+          src="./img/logo_desarrollador.png"
+          alt="logo del equipo de desarrollo"
+        />
+        <span>Powered by @beichooo & @ediquin</span>
+      </div>
+      <div class="footer__social-media">
+        <img
+          src="https://www.svgrepo.com/show/349530/tiktok.svg"
+          alt="tiktok logo"
+        />
+        <img
+          src="https://www.svgrepo.com/show/452196/facebook-1.svg"
+          alt="facebook logo"
+        />
+      </div>
+    </footer>
+  </body>
 </html>
