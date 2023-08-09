@@ -83,9 +83,9 @@ $row2 = $query->fetch(PDO::FETCH_ASSOC);
                 <div class="shelter-location__address">
                     <img src="../img/gps-icon__visit-date.svg" alt="gps icon">
                     <div>
-                        <p>En: <?php echo $pet_shelter; ?></p>
+                        <p>En: <?php echo $pet_shelter ?></p>
                         <p>
-                            <?php echo $row2['address'] ?>
+                            <?php echo $row['address'] ?>
                         </p>
                     </div>
                 </div>
