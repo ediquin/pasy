@@ -137,7 +137,7 @@ if ($row['health'] == 'Saludable') {
                     <img src="../img/location-status__pet-profile.svg" alt="icono de casita">
                     <div>
                         <span><?php echo $row['pet_shelter'] ?></span>
-                        <span>en <?php echo $row2['address'] ?></span>
+                        <span>en <?php echo $row['address'] ?></span>
                     </div>
                 </div>
             </article>
